@@ -1,0 +1,17 @@
+drupal8php7web:
+  build: .
+  ports:
+    - "81:80"
+    - "444:443"
+  links:
+   - drupal8php7db:database
+drupal8php7db:
+  image: mysql:5.5
+  volumes_from:
+    - mysql-drupal8-php7
+  environment:
+    TERM: xterm
+    MYSQL_ROOT_PASSWORD: password
+    MYSQL_USER: user
+    MYSQL_PASSWORD: password
+    MYSQL_DATABASE: drupal8php7
