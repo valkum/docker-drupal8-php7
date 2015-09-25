@@ -6,9 +6,9 @@ drupal8php7web:
   links:
    - drupal8php7db:database
 drupal8php7db:
-  image: mysql:5.5
+  image: mariadb:10.0
   volumes_from:
-    - mysql-drupal8-php7
+    - mariadb-drupal8-php7
   environment:
     TERM: xterm
     MYSQL_ROOT_PASSWORD: password
