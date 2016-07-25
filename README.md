@@ -30,7 +30,7 @@ sudo docker run -d --name mysql-drupal8-php7 mysql:5.5 --entrypoint /bin/echo My
 
 ```bash
 # Clone Drupal docker repository
-git clone https://github.com/andrewholgate/docker-drupal8-php7.git
+git clone https://github.com/valkum/docker-drupal8-php7.git
 cd docker-drupal8-php7
 
 # Build docker image
